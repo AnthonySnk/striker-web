@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tada.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nivo-slider.css">
+    <link rel="stylesheet" href="css/mi-slider.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/Registro.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+
+		<title>Admin</title>
+	</head>
+	<body>
+    <header>
+     <!--   Aca se agrega un nav para poder
+     crear el menu de navegacion de la pagina -->
+     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+     <!-- el inverse es para que cambien los colores y el static top es para que
+      el menu se mantenga en la parte de arriba de la pagina -->
+      <div class="container">
+
+        <div class="navbar-header">
+        <!-- Esto es para hacer el boton que se muestra cuando el dispositivo es mediano-->
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+         data-target="#navegacion" aria-expended="false" aria-controls="navbar">
+          <span class="sr-only">Ocultar</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+         </button>
+         <a href="index.html" class="navbar-brand">Strikker</a>
+         <!-- Este es el titulo que va en el menu-->
+        </div>
+
+       <div class="collapse navbar-collapse" id="navegacion"> <!-- El id que
+       se agrega aqui debe de llevar el mismo nombre que se ingreso en el data-target que
+       va en el boton que se muestra en dispositivos medianos-->
+        <ul class="nav navbar-nav">
+             <li class="active"><a href="index.html">Inicio</a></li>
+             <li><a href="login.html">Entrar</a></li>
+
+             <li><a href="Registro.html">Registro</a></li>
+             <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expended="false">
+             Articulos<span class="caret"></span></a>
+
+               <ul class="dropdown-menu multi-level" id="menu" role="menu">
+
+                  <li class="dropdown-submenu">
+                     <a href="personalizaHombres.html">Hombres</a>
+                            <ul class="dropdown-menu">
+                           <li><a href="personalizaHombres.html">Personalizado</a></li>
+                           <li><a href="Articulos.html">Todos los productos</a></li>
+                           </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                     <a href="personalizaMujeres.html">Mujeres</a>
+                            <ul class="dropdown-menu">
+                           <li><a href="personalizaMujeres.html">Personalizado</a></li>
+                           <li><a href="Articulos.html">Todos los productos</a></li>
+                           </ul>
+                  </li>
+               </ul>
+             </li>
+             <li><a href="Articulos.html">Tienda</a></li>
+             <li><a href="contactos.html">Conocenos</a></li>
+        </ul>
+       </div>
+      </div>
+     </nav>
+    </header>
+
+
+  <h1 class="animated bounce" align="center">Strikker</h1>
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h5>Registrate para poder realizar compras</h5>
+					<form class="" method="post" action="#">
+
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Nombre Completo</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Ingrese su nombre"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Ingreser su Email"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Username</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Ingreese su Username"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Ingrese sus Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirmar Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirme su Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<a href="#" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Registrase</a>
+						</div>
+           <div class="login-register">
+				            <a href="#" style="color:#fff;">Login</a>
+				       </div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
